@@ -1,0 +1,22 @@
+/* Single source of color tokens for offers feature CSS. Keep in sync with marketplace.theme.ts */
+.root {
+  --primary: #173039;
+  --accent: #00dbe3;
+  --accent-mid: #23a2bb;
+  --accent-dark: #00b4c9;
+  --text: #162f38;
+  --muted: #5a6670;
+  --border: #00dbe3;
+  --white: #ffffff;
+  --surface: #f5f8f9;
+  --surface-alt: #f8fcfd;
+  --table-header: #f3f3f3;
+  --overlay-accent: rgba(0, 219, 227, 0.15);
+  --overlay-border: rgba(0, 219, 227, 0.35);
+  --overlay-border-strong: rgba(0, 219, 227, 0.4);
+  --shadow-primary: rgba(23, 48, 57, 0.18);
+  --shadow-primary-strong: rgba(23, 48, 57, 0.25);
+  --white-muted: rgba(255, 255, 255, 0.85);
+  --white-soft: rgba(255, 255, 255, 0.9);
+  --white-faint: rgba(255, 255, 255, 0.75);
+}

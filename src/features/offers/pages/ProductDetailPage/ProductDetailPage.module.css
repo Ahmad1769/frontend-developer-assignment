@@ -1,13 +1,4 @@
 .page {
-  --primary: #173039;
-  --accent: #00dbe3;
-  --accent-mid: #23a2bb;
-  --accent-dark: #00b4c9;
-  --text: #162f38;
-  --muted: #5a6670;
-  --border: #00dbe3;
-  --white: #ffffff;
-
   width: 100%;
   overflow-x: hidden;
   background: var(--white);

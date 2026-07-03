@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  background: #ffffff;
-  border: 2px solid #00dbe3;
+  background: var(--white);
+  border: 2px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
@@ -13,14 +13,14 @@
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 32px rgba(23, 48, 57, 0.18);
+  box-shadow: 0 12px 32px var(--shadow-primary);
 }
 
 .imageWrap {
   position: relative;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: linear-gradient(to bottom, #173039, #00b4c9);
+  background: linear-gradient(to bottom, var(--primary), var(--accent-dark));
 }
 
 .image {
@@ -35,8 +35,8 @@
   top: 0.75rem;
   left: 0.75rem;
   padding: 0.25rem 0.6rem;
-  background: #173039;
-  color: #00dbe3;
+  background: var(--primary);
+  color: var(--accent);
   font-size: 0.75rem;
   font-weight: 700;
   border-radius: 4px;
@@ -54,7 +54,7 @@
   margin: 0;
   font-size: clamp(1rem, 2.5vw, 1.15rem);
   font-weight: 700;
-  color: #173039;
+  color: var(--primary);
   line-height: 1.35;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -65,7 +65,7 @@
 .location {
   margin: 0;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
-  color: #5a6670;
+  color: var(--muted);
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -79,7 +79,7 @@
   gap: 0.5rem;
   margin-top: auto;
   padding-top: 0.5rem;
-  border-top: 1px solid rgba(0, 219, 227, 0.35);
+  border-top: 1px solid var(--overlay-border);
 }
 
 .stat {
@@ -95,13 +95,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #5a6670;
+  color: var(--muted);
 }
 
 .statValue {
   font-size: clamp(0.85rem, 2vw, 0.95rem);
   font-weight: 700;
-  color: #173039;
+  color: var(--primary);
 }
 
 .cta {
@@ -112,8 +112,8 @@
   padding: 0.65rem;
   border: none;
   border-radius: 6px;
-  background: #00dbe3;
-  color: #173039;
+  background: var(--accent);
+  color: var(--primary);
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -123,6 +123,6 @@
 }
 
 .card:hover .cta {
-  background: #23a2bb;
-  color: #ffffff;
+  background: var(--accent-mid);
+  color: var(--white);
 }

@@ -99,7 +99,7 @@ Conventions follow [Athena](https://github.com) / Truvlet frontend layering (thi
 
 **Imports:** use `@/` for cross-folder paths (`@/components/...`, `@/features/offers/...`). Same-folder `./` is fine.
 
-**CSS:** one `.module.css` per component or page. Colors from `MARKETPLACE_THEME` / CSS variables on the page root. Components do not import styles from `pages/`.
+**CSS:** one `.module.css` per component or page. Hex colors live only in [`marketplace.theme.module.css`](src/features/offers/constants/marketplace.theme.module.css) (CSS vars) and [`marketplace.theme.ts`](src/features/offers/constants/marketplace.theme.ts) (MUI/JS). All other modules use `var(--primary)`, `var(--accent)`, etc. Pages wrap content with `themeStyles.root` so child components inherit tokens. Components do not import styles from `pages/`.
 
 ## Tech stack
 

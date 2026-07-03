@@ -7,6 +7,7 @@ import EmptyState from "@/features/offers/components/EmptyState/EmptyState";
 import { OFFER_LABELS } from "@/features/offers/constants/offer.constants";
 import { useOffers } from "@/features/offers/hooks/useOffers";
 import { useOfferSearch } from "@/features/offers/hooks/useOfferSearch";
+import themeStyles from "@/features/offers/constants/marketplace.theme.module.css";
 import styles from "./ExplorePage.module.css";
 
 const ExplorePage = () => {
@@ -20,7 +21,7 @@ const ExplorePage = () => {
   } = useOfferSearch(offers);
 
   return (
-    <Box>
+    <Box className={themeStyles.root}>
       <section className={styles.banner}>
         <div className={styles.bannerInner}>
           <Typography className={styles.title} component="h1">

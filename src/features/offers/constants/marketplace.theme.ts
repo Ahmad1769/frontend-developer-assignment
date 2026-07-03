@@ -1,3 +1,4 @@
+/** Keep in sync with marketplace.theme.module.css */
 export const MARKETPLACE_THEME = {
   primary: "#173039",
   accent: "#00dbe3",
@@ -7,5 +8,7 @@ export const MARKETPLACE_THEME = {
   textMuted: "#5a6670",
   white: "#ffffff",
   surface: "#f5f8f9",
+  surfaceAlt: "#f8fcfd",
   border: "#00dbe3",
+  tableHeader: "#f3f3f3",
 } as const;

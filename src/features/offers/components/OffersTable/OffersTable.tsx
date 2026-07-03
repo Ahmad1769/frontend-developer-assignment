@@ -80,7 +80,7 @@ const OffersTable = ({ offers, loading, onViewOffer }: OffersTableProps) => {
         border: `2px solid ${MARKETPLACE_THEME.border}`,
       }}
     >
-      <TableHead sx={{ background: "#f3f3f3" }}>
+      <TableHead sx={{ background: MARKETPLACE_THEME.tableHeader }}>
         <TableRow
           sx={{
             "& th": {

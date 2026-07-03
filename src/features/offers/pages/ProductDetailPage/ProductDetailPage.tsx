@@ -7,6 +7,7 @@ import ProductInfoPanel from "@/features/offers/components/ProductDetail/Product
 import ProductContactFooter from "@/features/offers/components/ProductDetail/ProductContactFooter";
 import { OFFER_LABELS, OFFER_ROUTES } from "@/features/offers/constants/offer.constants";
 import { useOffer } from "@/features/offers/hooks/useOffer";
+import themeStyles from "@/features/offers/constants/marketplace.theme.module.css";
 import styles from "./ProductDetailPage.module.css";
 
 const ProductDetailPage = () => {
@@ -16,7 +17,7 @@ const ProductDetailPage = () => {
 
   if (loading) {
     return (
-      <div className={styles.page}>
+      <div className={`${themeStyles.root} ${styles.page}`}>
         <p className={styles.loading}>{OFFER_LABELS.LOADING_PRODUCT}</p>
       </div>
     );
@@ -24,7 +25,7 @@ const ProductDetailPage = () => {
 
   if (!offer) {
     return (
-      <div className={styles.page}>
+      <div className={`${themeStyles.root} ${styles.page}`}>
         <div className={styles.notFound}>
           <h1>{OFFER_LABELS.NOT_FOUND}</h1>
           <button type="button" onClick={() => navigate(OFFER_ROUTES.EXPLORE)}>
@@ -36,7 +37,7 @@ const ProductDetailPage = () => {
   }
 
   return (
-    <div className={styles.page}>
+    <div className={`${themeStyles.root} ${styles.page}`}>
       <ProductHeader product={offer} />
       <main className={styles.main}>
         <ProductHero product={offer} />

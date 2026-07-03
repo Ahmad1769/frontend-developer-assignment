@@ -1,5 +1,5 @@
 .banner {
-  background: linear-gradient(to bottom, #173039, #00b4c9);
+  background: linear-gradient(to bottom, var(--primary), var(--accent-dark));
   padding: clamp(2rem, 6vw, 3.5rem) clamp(1rem, 4vw, 2.5rem);
 }
 
@@ -12,14 +12,14 @@
   margin: 0 0 0.5rem;
   font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white);
   line-height: 1.2;
 }
 
 .subtitle {
   margin: 0 0 1.5rem;
   font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--white-muted);
   max-width: 55ch;
 }
 
@@ -27,9 +27,9 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0.65rem 1rem;
-  background: rgba(0, 219, 227, 0.15);
-  border-bottom: 1px solid rgba(0, 219, 227, 0.4);
-  color: #173039;
+  background: var(--overlay-accent);
+  border-bottom: 1px solid var(--overlay-border-strong);
+  color: var(--primary);
   font-size: 0.9rem;
   text-align: center;
 }
@@ -50,14 +50,14 @@
 .empty {
   text-align: center;
   padding: 4rem 1rem;
-  color: #173039;
+  color: var(--primary);
   font-size: 1.1rem;
 }
 
 .emptyLink {
   display: inline-block;
   margin-top: 1rem;
-  color: #00dbe3;
+  color: var(--accent);
   font-weight: 700;
   text-decoration: none;
 }
