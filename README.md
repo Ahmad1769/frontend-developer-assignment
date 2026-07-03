@@ -40,6 +40,23 @@ Open **http://localhost:3000** — the Explore page loads with product cards.
 | `npm run build` | Production build |
 | `npm test` | Run tests |
 
+**Important:** `@/` path aliases only work via CRACO. Always use `npm start` or `npm run client`. Do **not** run `react-scripts start` directly — it will fail with "Can't resolve '@/...'" errors.
+
+## Troubleshooting
+
+**`Can't resolve '@/components/...'` in the browser overlay**
+
+An old dev server is probably still running without CRACO. Fix:
+
+```bash
+# Stop anything on port 3000, then restart
+lsof -i :3000 -sTCP:LISTEN   # note the PID
+kill <PID>
+npm run client               # or npm start for full stack
+```
+
+You should see `craco start` in the terminal, not `react-scripts start`.
+
 ## Optional setup
 
 Copy env file if you need custom ports:
