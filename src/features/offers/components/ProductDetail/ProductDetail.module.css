@@ -1,0 +1,389 @@
+.productHeader {
+  background: var(--accent);
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(1rem, 4vw, 2.5rem);
+}
+
+.headerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.backLink:hover {
+  opacity: 0.8;
+}
+
+.productName {
+  margin: 0;
+  font-size: clamp(1rem, 3.5vw, 1.75rem);
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  text-align: center;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.offerBadge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  background: var(--primary);
+  color: var(--accent);
+  font-size: clamp(0.75rem, 2vw, 0.85rem);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.heroSection {
+  margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.heroImageWrap {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--border);
+}
+
+.heroImage {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.statsCard {
+  position: absolute;
+  right: clamp(0.5rem, 3vw, 2rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(100% - 1rem, 320px);
+  background: var(--accent);
+  border-radius: 6px;
+  padding: clamp(0.75rem, 2vw, 1rem);
+  box-shadow: 0 8px 32px rgba(23, 48, 57, 0.25);
+}
+
+.statsTitle {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1rem, 3vw, 1.35rem);
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  background: var(--white);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  min-width: 0;
+}
+
+.statLabel {
+  font-size: clamp(0.7rem, 2vw, 0.8rem);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.statValue {
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.locationBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  min-height: 52px;
+  padding: 0.75rem 1rem;
+  background: var(--primary);
+  color: var(--white);
+  font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+  text-align: center;
+}
+
+.locationIcon {
+  color: var(--accent) !important;
+  flex-shrink: 0;
+}
+
+.offerPanel {
+  min-width: 0;
+}
+
+.offerNumberBox {
+  display: inline-block;
+  background: var(--primary);
+  border-radius: 6px;
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 2rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.offerNumberLabel {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--accent-mid);
+}
+
+.offerNumberValue {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.5vw, 1.75rem);
+  color: var(--white);
+}
+
+.detailList {
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.detailRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 219, 227, 0.35);
+}
+
+.detailRow dt {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.detailRow dd {
+  margin: 0;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: var(--text);
+  word-break: break-word;
+}
+
+.detailRow dd.highlight {
+  color: var(--accent-mid);
+  font-weight: 700;
+}
+
+.detailRow dd.mono {
+  font-family: monospace;
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 64px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent-mid);
+  color: var(--white);
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cartButton:hover {
+  background: var(--accent-dark);
+}
+
+.infoPanel {
+  min-width: 0;
+}
+
+.sectionTitle {
+  margin: 0 0 1rem;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 0 0 2rem;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.featuresList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 1rem;
+  padding: clamp(1rem, 2.5vw, 1.25rem);
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background: #f8fcfd;
+  min-width: 0;
+}
+
+.featureIcon {
+  color: var(--accent) !important;
+  flex-shrink: 0;
+  font-size: clamp(1.5rem, 4vw, 1.75rem) !important;
+}
+
+.featureItem h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: var(--primary);
+}
+
+.featureItem p {
+  margin: 0;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.productFooter {
+  margin-top: clamp(2rem, 5vw, 3rem);
+  background: linear-gradient(to bottom, var(--primary), var(--accent-dark));
+  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 2.5rem);
+}
+
+.footerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footerTitle {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.footerSub {
+  margin: 0 0 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.contactLabel {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.contactGrid a,
+.contactGrid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contactGrid a:hover {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .featuresList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contactGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .detailRow {
+    grid-template-columns: 180px 1fr;
+    align-items: baseline;
+  }
+
+  .cartButton {
+    max-width: 352px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .statsCard {
+    width: 367px;
+  }
+
+  .heroImage {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+@media (max-width: 767px) {
+  .headerInner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .backLink {
+    justify-self: start;
+  }
+
+  .offerBadge {
+    justify-self: center;
+  }
+
+  .heroImageWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statsCard {
+    position: static;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    border-top: 2px solid var(--border);
+  }
+}
